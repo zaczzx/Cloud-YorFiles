@@ -1,0 +1,28 @@
+<% include partials/header %>
+
+<div class="container text-center">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <span id="upload-icon"><i class="fa fa-cloud-upload" aria-hidden="true"></i></span>
+          <h2>File Uploader</h2>
+          <br>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar"></div>
+          </div>
+          <button class="btn btn-lg btn-success upload-btn" type="button">Upload File</button><br><br>
+          <input class="btn btn-sm btn-primary" type="button" value="Back" onclick="history.back();" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<input id="upload-input" type="file" name="uploads[]" multiple="multiple"></br>
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="/js/upload.js"></script>
+
+<% include partials/footer %>
